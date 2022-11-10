@@ -17,6 +17,8 @@ namespace PalindromeExerciseTests
         [InlineData("shrek", false)]
         [InlineData("onion", false)]
         [InlineData("donkey", false)]
+        [InlineData(null, false)]
+        [InlineData("", false)]
         public void Test1(string word, bool expected)
         {
             //Arrange
