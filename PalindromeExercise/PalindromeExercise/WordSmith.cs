@@ -10,9 +10,9 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         { 
-            char[] chars = word.ToCharArray();
+            char[] chars = word.ToLower().ToCharArray();
             Array.Reverse(chars);
-            return (new string(chars) == word);
+            return (new string(chars) == word.ToLower());
         }
     }
 }
